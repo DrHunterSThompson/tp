@@ -2,15 +2,15 @@
 	var dc = {};
 
 
-	var homeHtml = "../snippets/home-snippet.html";
-	var charactersUrl = "../data/characters.json";
-	var charactersTitleHtml = "../snippets/characters-title-snippet.html";
-	var characterHtml = "../snippets/character-snippet.html";
-	var photosTitleHtml = "../snippets/photos-title-snippet.html";
-	var photoHtml = "../snippets/photo-snippet.html";
-	var musicUrl = "../data/music.json";
-	var musicTitleHtml = "../snippets/music-title-snippet.html";
-	var musicHtml = "../snippets/music-snippet.html";
+	var homeHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/home-snippet.html";
+	var charactersUrl = "https://github.com/DrHunterSThompson/tp/blob/with-js/data/characters.json";
+	var charactersTitleHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/characters-title-snippet.html";
+	var characterHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/character-snippet.html";
+	var photosTitleHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/photos-title-snippet.html";
+	var photoHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/photo-snippet.html";
+	var musicUrl = "https://github.com/DrHunterSThompson/tp/blob/with-js/data/music.json";
+	var musicTitleHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/music-title-snippet.html";
+	var musicHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/music-snippet.html";
 
 
 	var insertHtml = function (selector, html) {
