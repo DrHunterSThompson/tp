@@ -19,6 +19,12 @@ header {
 	opacity: .9;
 	z-index: 999;
 }
+
+#main-content.container {
+	margin-top: 80px;
+	padding-right: 0;
+	padding-left: 0;
+}
 header section.row div {
 	padding: 25px 0;
 	height: 80px;
