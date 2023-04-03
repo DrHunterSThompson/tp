@@ -25,32 +25,37 @@ header {
 	padding-right: 0;
 	padding-left: 0;
 }
+
+header section.row div#logo {
+	padding: 5px 0 0 0;
+	filter: grayscale(100%);
+	background: url('../data/images/logo.jpg') no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+header section.row div#logo:hover {
+	background-color: #444;
+	filter: grayscale(0%);
+}
+header section.row div#logo.active {
+	filter: grayscale(0%);
+}
+
+
 header section.row div {
 	padding: 25px 0;
 	height: 80px;
 	text-align: center;
-}
-header section.row div:hover {
-	background-color: #444;
-	cursor: pointer;
-}
-header a {
-	vertical-align: middle;
 	color: #fff;
 	font-size: 1.5vw;
 	text-transform: uppercase;
 }
-header section.row div#logo {
-	padding: 5px 0 0 0;
-}
-header section.row div#logo:hover {
+header section.row div:hover {
 	background-color: #444;
+	cursor: pointer;
+	color: #ddd;
 }
 
-header a:hover {
-	color: #eee;
-	text-decoration: none;
-}
 header .active {
 	background-color: #333;
 	color: #eee;
@@ -85,7 +90,9 @@ header .active {
 	line-height: 1.3em;
 }
 #home-page-article img {
-	padding: 25px 50px;
+	width: 60%;
+	margin: 15px 20%;
+	box-shadow: 1px 1px 5px #000;
 }
 
 section.row#characters {
