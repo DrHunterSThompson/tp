@@ -1,0 +1,38 @@
+[
+	{
+		"short_name": "lust-for-life",
+		"title": "Lust For Life",
+		"singer": "Iggy Pop",
+		"iframe": "<iframe width='320' height='180' src='https://www.youtube.com/embed/vYZ-n8L0AaI' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "atomic",
+		"title": "Atomic",
+		"singer": "Sleeper",
+		"iframe": "<iframe width='320' height='180' src='https://www.youtube.com/embed/PGugRv9G9pQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "born-slippy",
+		"title": "Born Slippy (Nuxx)",
+		"singer": "Underworld",
+		"iframe": "<iframe width='320' height='180' src='https://www.youtube.com/embed/R723w9CWkX0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "perfect-day",
+		"title": "Perfect day",
+		"singer": "Lou Reed",
+		"iframe": "<iframe width='320' height='180' src='https://www.youtube.com/embed/9wxI4KK9ZYo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "the-passenger",
+		"title": "The Passenger",
+		"singer": "Iggy Pop",
+		"iframe": "<iframe width='320' height='180' src='https://www.youtube.com/embed/-fWw7FE9tTo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "mile-end",
+		"title": "Mile End",
+		"singer": "Pulp",
+		"iframe": "<iframe width='320' height='180' src='https://www.youtube.com/embed/V5oC5xw9o6s' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	}
+]

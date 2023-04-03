@@ -1,0 +1,32 @@
+[
+	{
+		"short_name": "renton",
+		"name": "Mark Renton",
+		"actor": "Ewan McGregor"
+	},
+	{
+		"short_name": "spud",
+		"name": "Spud",
+		"actor": "Ewen Bremner"
+	},
+	{
+		"short_name": "sick-boy",
+		"name": "Sick Boy",
+		"actor": "Johny Lee Miller"
+	},
+	{
+		"short_name": "begbie",
+		"name": "Franco Begbie",
+		"actor": "Robert Carlyle"
+	},
+	{
+		"short_name": "diane",
+		"name": "Diane",
+		"actor": "Kelly Macdonald"
+	},
+	{
+		"short_name": "tommy",
+		"name": "Tommy",
+		"actor": "Kevin McKidd"
+	},
+]
