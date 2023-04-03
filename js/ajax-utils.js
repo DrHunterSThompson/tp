@@ -23,7 +23,7 @@
       handleResponse(request, responseHandler, isJsonResponse); 
     };
     request.open("GET", requestUrl, true);
-    request.send(null); // for POST only
+    request.send(); // for POST only
   };
 
 
