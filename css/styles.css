@@ -91,7 +91,9 @@ header .active {
 	line-height: 1.3em;
 }
 #home-page-article img {
-	padding: 25px 50px;
+	width: 60%;
+	margin: 15px 20%;
+	box-shadow: 1px 1px 5px #000;
 }
 
 section.row#characters {
