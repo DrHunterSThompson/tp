@@ -34,5 +34,42 @@
 		"title": "Mile End",
 		"singer": "Pulp",
 		"iframe": "<iframe src='https://www.youtube.com/embed/V5oC5xw9o6s' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "nightclubbing",
+		"title": "Nightclubbing",
+		"singer": "Iggy Pop",
+		"iframe": "<iframe src='https://www.youtube.com/embed/XOSajEshJWA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "deep-blue-day",
+		"title": "Deep Blue Day",
+		"singer": "Brian Eno",
+		"iframe": "<iframe src='https://www.youtube.com/embed/v2DRWVHPRxs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "2:1",
+		"title": "2:1",
+		"singer": "Elastica",
+		"iframe": "<iframe src='https://www.youtube.com/embed/5iE5vu1Mj2g' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share's allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "dark-and-long",
+		"title": "Dark And Long (Dark Train)",
+		"singer": "Underworld",
+		"iframe": "<iframe src='https://www.youtube.com/embed/sHK9usHwxSs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+
+	},
+	{
+		"short_name": "sing",
+		"title": "Sing",
+		"singer": "Blur",
+		"iframe": "<iframe src='https://www.youtube.com/embed/gzPpTmSoU4U' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+	},
+	{
+		"short_name": "original",
+		"title": "Original",
+		"singer": "Leftfield",
+		"iframe": "<iframe src='https://www.youtube.com/embed/xQFp83SAtls' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
 	}
 ]

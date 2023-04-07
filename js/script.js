@@ -110,6 +110,14 @@
 			html = insertProperty(html, "short_name", short_name);
 			html = insertProperty(html, "name", name);
 			html = insertProperty(html, "actor", actor);
+
+			if (i % 3 == 2) {
+				html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
+			}
+			if (i % 2 != 0) {
+				html += "<div class='clearfix visible-sm-block'></div>";
+			}
+
 			finalHtml += html;
 		}
 
@@ -156,6 +164,13 @@
 			var html = characterPagePhotoHtml;
 			html = insertProperty(html, "fileName", character.short_name + "/" + character.photos[i]);
 			finalHtml += html;
+
+			if (i % 3 == 2) {
+				html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
+			}
+			if (i % 2 != 0) {
+				html += "<div class='clearfix visible-sm-block'></div>";
+			}
 		}
 		finalHtml += "</section>";
 
@@ -185,6 +200,13 @@
 			var html = photoHtml;
 			html = insertProperty(html, "number", i);
 			finalHtml += html;
+
+			if (i % 3 == 2) {
+				html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
+			}
+			if (i % 2 != 0) {
+				html += "<div class='clearfix visible-sm-block'></div>";
+			}
 		}
 
 		finalHtml += "</section>";
@@ -219,6 +241,13 @@
 			html = insertProperty(html, "title", title);
 			html = insertProperty(html, "singer", singer);
 			finalHtml += html;
+
+			if (i % 3 == 2) {
+				html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
+			}
+			if (i % 2 != 0) {
+				html += "<div class='clearfix visible-sm-block'></div>";
+			}
 		}
 		finalHtml += "</section>";
 		return finalHtml;
