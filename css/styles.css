@@ -55,7 +55,6 @@ header section.row div:hover {
 	cursor: pointer;
 	color: #ddd;
 }
-
 header .active {
 	background-color: #333;
 	color: #eee;
@@ -77,21 +76,22 @@ header .active {
 	width: 35%;
 	border: 2px solid #fff;
 }
-#home-page-article {
+
+.article {
 	background-color: #ddd;
 	margin-bottom: 100px;
 	box-shadow: 5px 5px 20px #000;
 }
-#home-page-article p {
+.article p {
 	font-family: 'Edu NSW ACT Foundation', cursive;
 	padding: 25px 50px;
 	text-align: justify;
 	font-size: 2em;
 	line-height: 1.3em;
 }
-#home-page-article img {
-	width: 60%;
-	margin: 15px 20%;
+.article img {
+	width: 80%;
+	margin: 15px 10%;
 	box-shadow: 1px 1px 5px #000;
 }
 
@@ -107,13 +107,13 @@ section.row#characters div {
 	font-weight: bold;
 }
 section.row#characters div img {
-	box-shadow: 5px 5px 20px #000;
+	box-shadow: 1px 1px 5px #000;
 	margin-bottom: 20px;
 }
 section.row#characters div p {
 	color: #fff;
 	opacity: .9;
-	text-shadow: 5px 5px 20px #000;
+	text-shadow: 1px 1px 5px #000;
 	line-height: .6em;
 }
 section.row#characters div span {
@@ -122,13 +122,49 @@ section.row#characters div span {
 	font-weight: normal;
 	font-size: .6em;
 }
+section.row#characters div a:hover {
+	text-decoration: none;
+}
+section.row#characters div a:hover img {
+	box-shadow: 1px 1px 20px #000;
+}
+section.row#characters div a:hover p {
+	text-shadow: 1px 1px 20px #000;
+}
+
+h2 {
+	margin-top: 50px;
+	font-size: 3em;
+	text-shadow: 5px 5px 20px #000;
+	color: #ccc;
+	font-weight: normal;
+}
+h2 hr {
+	margin-top: 10px;
+	border: 1px solid #fff;
+}
+
+div#character-page-article-photo {
+	float: left;
+	width: 300px;
+}
+div#character-page-article-photo img {
+	width: 100%;
+	margin: 15px;
+}
+p#character-description {
+	margin-top: 50px;
+	min-height: 330px;
+	margin-left: 315px;
+}
+
 
 section.row#photos {
 	margin-bottom: 100px;
 }
 section.row#photos div {
+	padding: 15px 15px 30px;
 	text-align: center;
-	margin-bottom: 80px;
 }
 section.row#photos div img {
 	box-shadow: 3px 3px 10px #000;
@@ -141,11 +177,8 @@ section.row#music div {
 	text-align: center;
 	margin-bottom: 80px;
 }
-section.row#music div img {
-	box-shadow: 3px 3px 10px #000;
-}
-section.row#music div audio {
-	margin-top: 10px;
+section.row#music iframe {
+	box-shadow: 1px 1px 20px #000;
 }
 section.row#music div p {
 	font-family: 'Edu NSW ACT Foundation', cursive;
@@ -192,4 +225,43 @@ footer {
 	bottom: 0;
 	right: 0;
 	width: 100%;
+}
+
+
+
+@media (min-width: 1200px) {
+	.col-md-4 img, .col-md-4 iframe {
+		width: 370px;
+	}
+	.col-md-4 iframe {
+		height: 208px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.col-md-4 img, .col-md-4 iframe {
+		width: 300px;
+	}
+	.col-md-4 iframe {
+		height: 170px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-sm-6 img, .col-sm-6 iframe {
+		width: 360px;
+	}
+	.col-sm-6 iframe {
+		height: 202px;
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		width: 90%;
+	}
+	.col-xs-12 img {
+		width: 100%;
+	}
+	.col-xs-12 iframe {
+		width: 80%;
+		min-height: 240px;
+	}
 }

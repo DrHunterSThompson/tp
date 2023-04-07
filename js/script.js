@@ -2,15 +2,20 @@
 	var dc = {};
 
 
-	var homeHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/home-snippet.html";
-	var charactersUrl = "https://github.com/DrHunterSThompson/tp/blob/with-js/data/characters.json";
-	var charactersTitleHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/characters-title-snippet.html";
-	var characterHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/character-snippet.html";
-	var photosTitleHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/photos-title-snippet.html";
-	var photoHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/photo-snippet.html";
-	var musicUrl = "https://github.com/DrHunterSThompson/tp/blob/with-js/data/music.json";
-	var musicTitleHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/music-title-snippet.html";
-	var musicHtml = "https://github.com/DrHunterSThompson/tp/blob/with-js/snippets/music-snippet.html";
+	var homeHtml = "snippets/home-snippet.html";
+	var charactersUrl = "data/characters.json";
+	var charactersTitleHtml = "snippets/characters-title-snippet.html";
+	var characterHtml = "snippets/character-snippet.html";
+	var characterUrl = "data/characters/";
+	var characterPageTitleHtml = "snippets/character-page-title-snippet.html";
+	var characterPageArticleHtml = "snippets/character-page-article-snippet.html";
+	var characterPagePhotoHtml = "snippets/character-page-photo-snippet.html";
+	var characterPagePhotoUrl = "data/images/characters/";
+	var photosTitleHtml = "snippets/photos-title-snippet.html";
+	var photoHtml = "snippets/photo-snippet.html";
+	var musicUrl = "data/music.json";
+	var musicTitleHtml = "snippets/music-title-snippet.html";
+	var musicHtml = "snippets/music-snippet.html";
 
 
 	var insertHtml = function (selector, html) {
@@ -38,23 +43,30 @@
 
 
 	document.addEventListener("DOMContentLoaded", function (event) {
+		dc.loadHomePage();
+	});
+
+	dc.loadHomePage = function () {
 		$ajaxUtils.sendGetRequest(
 			homeHtml,
 			function (responseText) {
 				document.querySelector("#main-content").innerHTML = responseText;
 			},
-			false);
+			false
+		);
 
 		setActive("#logo");
-	});
-
-
+		setTitle("Trainspotting");
+	}
 	dc.loadCharacters = function () {
 		$ajaxUtils.sendGetRequest(charactersUrl, buildAndShowCharactersHTML);
 
 		setActive("#characters");
 		setTitle("Characters")
 	};
+	dc.loadCharacterPage = function (short_name) {
+		$ajaxUtils.sendGetRequest(characterUrl + short_name + ".json", buildAndShowCharacterPageHTML);
+	}
 	dc.loadPhotos = function () {
 		buildAndShowPhotosHTML();
 	
@@ -95,12 +107,58 @@
 			var name = characters[i].name;
 			var actor = characters[i].actor;
 			html = insertProperty(html, "short_name", short_name);
+			html = insertProperty(html, "short_name", short_name);
 			html = insertProperty(html, "name", name);
 			html = insertProperty(html, "actor", actor);
 			finalHtml += html;
 		}
 
 		finalHtml += "</section>";
+		return finalHtml;
+	}
+
+	function buildAndShowCharacterPageHTML(character) {
+		$ajaxUtils.sendGetRequest(
+			characterPageTitleHtml,
+			function (characterPageTitleHtml) {
+				$ajaxUtils.sendGetRequest(
+					characterPageArticleHtml,
+					function (characterPageArticleHtml) {
+						$ajaxUtils.sendGetRequest(
+							characterPagePhotoHtml,
+							function(characterPagePhotoHtml) {
+								var characterPageViewHtml = buildCharacterPageViewHtml(character[0], characterPageTitleHtml, characterPageArticleHtml, characterPagePhotoHtml);
+								insertHtml("#main-content", characterPageViewHtml);		
+							},
+							false
+						);
+					},
+					false
+				);
+			},
+			false
+		);
+	}
+	function buildCharacterPageViewHtml(character, characterPageTitleHtml, characterPageArticleHtml, characterPagePhotoHtml) {
+		setTitle(character.name);
+
+		var finalHtml = characterPageTitleHtml;
+		finalHtml = insertProperty(finalHtml, "name", character.name);
+		finalHtml = insertProperty(finalHtml, "actor", character.actor);
+
+		finalHtml += characterPageArticleHtml;
+		finalHtml = insertProperty(finalHtml, "img-src", characterPagePhotoUrl + character.short_name + ".png");
+		finalHtml = insertProperty(finalHtml, "description", character.description);
+
+		finalHtml += "<h2>Photos<hr></h2>";
+		finalHtml += "<section id='photos' class='row'>";
+		for (var i = 0; i < character.photos.length; i++) {
+			var html = characterPagePhotoHtml;
+			html = insertProperty(html, "fileName", character.short_name + "/" + character.photos[i]);
+			finalHtml += html;
+		}
+		finalHtml += "</section>";
+
 		return finalHtml;
 	}
 

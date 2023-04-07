@@ -1,0 +1,9 @@
+[
+    {
+		"short_name": "sick-boy",
+		"name": "Sick Boy",
+		"actor": "Johny Lee Miller",
+		"description": "lorem ipsum dolor sit amet",
+		"photos": ["1.png","2.png","3.png","4.png","5.png","6.png"]
+	}
+]
