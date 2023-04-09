@@ -84,7 +84,7 @@ header .active {
 }
 .article p {
 	font-family: 'Edu NSW ACT Foundation', cursive;
-	padding: 25px 50px;
+	padding: 25px;
 	text-align: justify;
 	font-size: 2em;
 	line-height: 1.3em;
@@ -144,18 +144,14 @@ h2 hr {
 	border: 1px solid #fff;
 }
 
-div#character-page-article-photo {
+div#character-page.article img {
 	float: left;
 	width: 300px;
-}
-div#character-page-article-photo img {
-	width: 100%;
-	margin: 15px;
+	margin: 35px 25px 0px 25px;
 }
 p#character-description {
 	margin-top: 50px;
-	min-height: 330px;
-	margin-left: 315px;
+	min-height: 370px;
 }
 
 
